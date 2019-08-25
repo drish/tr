@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  tr:
+    build: .
+    volumes:
+      - .:/go/src/github.com/drish/tr
+      - ~/.kube/:/.kube/
+    networks:
+      - default
